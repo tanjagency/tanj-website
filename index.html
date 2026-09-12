@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TANJ — Where Brands Meet Influence</title>
+<meta name="description" content="TANJ connects brands with the right creators to build authentic stories, meaningful conversations and real impact.">
+<style>
+:root{--bg:#08090b;--card:#111318;--text:#f7f7f5;--muted:#a7a9b0;--accent1:#ff8b3d;--accent2:#c84cff;--line:#25272d;--cream:#f4f1ea}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
+a{text-decoration:none;color:inherit}.nav{position:fixed;top:0;left:0;right:0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:20px 6%;background:rgba(8,9,11,.75);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.06)}
+.logo{font-size:29px;font-weight:900;letter-spacing:-2px}.logo i{display:inline-block;width:9px;height:22px;margin-left:3px;transform:skew(-18deg);background:linear-gradient(180deg,#ffd43d,#ff7c47,#c34cff)}
+.links{display:flex;gap:28px;font-size:14px;color:#d6d6da}.links a:hover{color:white}.btn{display:inline-flex;padding:12px 20px;border:1px solid #555861;border-radius:28px;font-weight:700;font-size:14px}.btn.primary{border:0;background:linear-gradient(100deg,var(--accent1),var(--accent2));color:white}
+.hero{min-height:760px;padding:170px 6% 90px;display:flex;align-items:center;position:relative;overflow:hidden;background:radial-gradient(circle at 75% 45%,rgba(199,66,255,.18),transparent 28%),radial-gradient(circle at 15% 80%,rgba(255,111,57,.12),transparent 25%)}
+.hero-content{max-width:760px}.eyebrow{font-size:11px;letter-spacing:5px;color:#c9c9ce}.hero h1{font-size:clamp(54px,8vw,100px);line-height:.94;letter-spacing:-5px;margin:22px 0}.gradient{background:linear-gradient(90deg,#fff 35%,#ff9950 58%,#d54cff);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{max-width:590px;color:#b7b9c0;font-size:18px}.hero-actions{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap}.stats{display:grid;grid-template-columns:repeat(4,1fr);margin-top:80px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.stat{padding:28px 15px;border-right:1px solid var(--line);text-align:center}.stat:last-child{border:0}.stat b{font-size:30px;display:block}.stat span{color:var(--muted);font-size:13px}
+.section{padding:100px 6%}.light{background:var(--cream);color:#111}.section-head{display:flex;justify-content:space-between;gap:40px;align-items:end;margin-bottom:50px}.section h2{font-size:clamp(38px,5vw,62px);line-height:1;letter-spacing:-3px;margin:0;max-width:650px}.section-head p{max-width:440px;color:#8f9299}.light .section-head p{color:#555}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service{background:#fff;border:1px solid #e2e0da;border-radius:18px;padding:30px;min-height:220px}.service .icon{font-size:27px;margin-bottom:30px}.service h3{margin:0 0 10px;font-size:21px}.service p{margin:0;color:#666;font-size:14px}
+.creators{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.creator{min-height:320px;border-radius:18px;padding:22px;display:flex;align-items:end;position:relative;overflow:hidden;background:linear-gradient(160deg,#25252b,#0e0f12)}.creator:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.8),transparent 65%)}.creator div{position:relative;z-index:1}.creator small{color:#c9c9cc}.creator h3{margin:5px 0 0;font-size:23px}
+.work{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.work-card{min-height:260px;padding:25px;border-radius:18px;background:linear-gradient(145deg,#17191e,#090a0c);border:1px solid #262830;display:flex;flex-direction:column;justify-content:end}.work-card b{font-size:22px}
+.cta{padding:110px 6%;background:linear-gradient(120deg,#16171b,#24152c 55%,#101114);text-align:center}.cta h2{font-size:clamp(44px,6vw,76px);letter-spacing:-4px;margin:0 auto 25px;max-width:850px}.cta p{color:#b9bbc2}.footer{padding:30px 6%;display:flex;justify-content:space-between;color:#898b91;font-size:13px;border-top:1px solid var(--line)}
+@media(max-width:850px){.links{display:none}.hero{min-height:auto;padding-top:140px}.stats{grid-template-columns:repeat(2,1fr)}.grid,.creators,.work{grid-template-columns:1fr 1fr}.section-head{display:block}}
+@media(max-width:560px){.grid,.creators,.work{grid-template-columns:1fr}.hero h1{letter-spacing:-3px}.stats{grid-template-columns:1fr 1fr}.stat{padding:20px 5px}.stat b{font-size:24px}}
+</style>
+</head>
+<body>
+<nav class="nav"><a class="logo" href="#">TANJ<i></i></a><div class="links"><a href="#about">About</a><a href="#services">Services</a><a href="#creators">Creators</a><a href="#work">Work</a><a href="#contact">Contact</a></div><a class="btn" href="#contact">Let's Talk →</a></nav>
+
+<header class="hero" id="about">
+<div class="hero-content">
+<div class="eyebrow">INFLUENCER MARKETING AGENCY</div>
+<h1>Where Brands<br>Meet <span class="gradient">Influence.</span></h1>
+<p>We connect brands with the right creators to build authentic stories, meaningful conversations and real impact.</p>
+<div class="hero-actions"><a class="btn primary" href="#contact">Work With Us →</a><a class="btn" href="#creators">Meet Our Creators</a></div>
+<div class="stats"><div class="stat"><b>100+</b><span>Creators</span></div><div class="stat"><b>50+</b><span>Brands</span></div><div class="stat"><b>1M+</b><span>Combined Reach</span></div><div class="stat"><b>100%</b><span>Authenticity</span></div></div>
+</div></header>
+
+<section class="section light" id="services">
+<div class="section-head"><h2>End-to-End Influencer Marketing Solutions</h2><p>From strategy to execution, TANJ helps brands collaborate with the right creators to build authentic, high-impact campaigns.</p></div>
+<div class="grid">
+<div class="service"><div class="icon">◌</div><h3>Creator Discovery</h3><p>Find the perfect creators for your brand and audience.</p></div>
+<div class="service"><div class="icon">⌁</div><h3>Campaign Management</h3><p>Seamless execution from planning to performance.</p></div>
+<div class="service"><div class="icon">✦</div><h3>Content Creation</h3><p>Authentic, scroll-stopping creator content.</p></div>
+<div class="service"><div class="icon">⚙</div><h3>Product Seeding</h3><p>Put your product in the hands of relevant creators.</p></div>
+<div class="service"><div class="icon">↗</div><h3>Brand Collaborations</h3><p>Build meaningful partnerships between brands and creators.</p></div>
+<div class="service"><div class="icon">◈</div><h3>Performance Insights</h3><p>Real data and measurable campaign results.</p></div>
+</div>
+</section>
+
+<section class="section" id="creators">
+<div class="section-head"><h2>Meet Our Creators</h2><p>100+ creators across the niches that matter to modern brands.</p></div>
+<div class="creators">
+<div class="creator"><div><small>FASHION</small><h3>Creator Profile</h3></div></div>
+<div class="creator"><div><small>BEAUTY</small><h3>Creator Profile</h3></div></div>
+<div class="creator"><div><small>LIFESTYLE</small><h3>Creator Profile</h3></div></div>
+<div class="creator"><div><small>FOOD</small><h3>Creator Profile</h3></div></div>
+</div>
+</section>
+
+<section class="section light" id="work">
+<div class="section-head"><h2>Ideas. Creators. Impact.</h2><p>Our campaign showcase will live here as TANJ starts creating brand stories.</p></div>
+<div class="work"><div class="work-card"><small>COMING SOON</small><b>Your first campaign.</b></div><div class="work-card"><small>COMING SOON</small><b>Built for creators.</b></div><div class="work-card"><small>COMING SOON</small><b>Stronger together.</b></div></div>
+</section>
+
+<section class="cta" id="contact"><h2>Let's Create Something Great.</h2><p>Partner with TANJ and turn your brand story into a movement.</p><br><a class="btn primary" href="mailto:hello@tanj.in">Get in Touch →</a></section>
+<footer class="footer"><div><b>TANJ</b> — Where Brands Meet Influence.</div><div>© 2026 TANJ. All rights reserved.</div></footer>
+</body></html>
