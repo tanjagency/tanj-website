@@ -126,7 +126,12 @@ async function logout() {
       style="width:100%; padding:12px;">
       Login
     </button>
-
+<button onclick="signUp(
+  document.getElementById('loginEmail').value,
+  document.getElementById('loginPassword').value
+)" style="width:100%; padding:12px; margin-top:10px;">
+  Sign Up
+</button>
     <button onclick="document.getElementById('login').style.display='none'"
       style="width:100%; padding:12px; margin-top:10px;">
       Close
