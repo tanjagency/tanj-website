@@ -63,4 +63,53 @@ a{text-decoration:none;color:inherit}.nav{position:fixed;top:0;left:0;right:0;z-
 
 <section class="cta" id="contact"><h2>Let's Create Something Great.</h2><p>Partner with TANJ and turn your brand story into a movement.</p><br><a class="btn primary" href="mailto:hello@tanj.in">Get in Touch →</a></section>
 <footer class="footer"><div><b>TANJ</b> — Where Brands Meet Influence.</div><div>© 2026 TANJ. All rights reserved.</div></footer>
+  <!-- TANJ AUTH -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script>
+const SUPABASE_URL = "https://iokogwslujwirdblaokm.supabase.co";
+const SUPABASE_KEY = "sb_publishable_DCyHv7qgOKfqEt7ew8p4TA_Oky_wTyo";
+
+const { createClient } = supabase;
+const supabaseClient = createClient(SUPABASE_URL, SUPABASE_KEY);
+
+async function signUp(email, password) {
+  const { data, error } = await supabaseClient.auth.signUp({
+    email: email,
+    password: password
+  });
+
+  if (error) {
+    alert(error.message);
+    return;
+  }
+
+  alert("Signup successful! Please check your email to confirm your account.");
+}
+
+async function login(email, password) {
+  const { data, error } = await supabaseClient.auth.signInWithPassword({
+    email: email,
+    password: password
+  });
+
+  if (error) {
+    alert(error.message);
+    return;
+  }
+
+  alert("Login successful!");
+}
+
+async function logout() {
+  const { error } = await supabaseClient.auth.signOut();
+
+  if (error) {
+    alert(error.message);
+    return;
+  }
+
+  alert("Logged out successfully.");
+}
+</script>
 </body></html>
