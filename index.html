@@ -75,9 +75,12 @@ const supabaseClient = createClient(SUPABASE_URL, SUPABASE_KEY);
 
 async function signUp(email, password) {
   const { data, error } = await supabaseClient.auth.signUp({
-    email: email,
-    password: password
-  });
+  email: email,
+  password: password,
+  options: {
+    emailRedirectTo: "https://tanjagency.github.io/tanj-website/"
+  }
+});
 
   if (error) {
     alert(error.message);
